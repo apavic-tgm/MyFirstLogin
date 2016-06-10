@@ -19,13 +19,14 @@ public class Card {
 	}
 
 	private void init() {
-		result = 0;
 		// TODO left und right zufaellig befuellen
+		result = 0;
 		left = (int) (Math.random() * 999);
 		right = (int) (Math.random() * 999);
 		
+		
 	}
- 
+
 	public String next() {
 		init();
 		return "next";

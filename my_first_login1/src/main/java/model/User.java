@@ -6,12 +6,9 @@ public class User {
 	private String name;
 	private String password;
 	private boolean loggedIn;
-	
-	
 
 	public User() {
 		loggedIn = false;
-		
 	}
 
 	/**
@@ -38,21 +35,16 @@ public class User {
 	}
 
 	public String login() {
-		String ret = "failed";
 		// TODO name und password ueberpruefen - im Fehlerfall "failed" returnen,
 		// ansonsten "loggedIn" auf true setzen und "success" returnen
-	
 		if(name.equals("toni") && password.equals("pw")){
 			loggedIn = true;
 			return "success";
 		}else{
-			return ret;
+			return "failed";
 		}
 		
-	
 	}
-	
-
 
 	public String logout() {
 		loggedIn = false;
